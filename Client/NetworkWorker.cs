@@ -915,7 +915,7 @@ namespace DarkMultiPlayer
                         ModWorker.fetch.modControl = (ModControlMode)mr.Read<int>();
                         if (ModWorker.fetch.modControl != ModControlMode.DISABLED)
                         {
-                            modFileData = mr.Read<string>();
+                            modFileData = System.Text.Encoding.UTF8.GetString(Compression.DecompressIfNeeded(mr.Read<byte[]>()));
                         }
                     }
                 }

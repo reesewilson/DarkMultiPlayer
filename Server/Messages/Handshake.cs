@@ -247,7 +247,14 @@ namespace DarkMultiPlayerServer.Messages
                             Server.GenerateNewModFile();
                         }
                         string modFileData = File.ReadAllText(Server.modFile);
-                        mw.Write<string>(modFileData);
+                        if (client.compressionEnabled)
+                        {
+                            mw.Write<byte[]>(Compression.CompressIfNeeded(System.Text.Encoding.UTF8.GetBytes(modFileData)));
+                        }
+                        else
+                        {
+                            mw.Write<byte[]>(Compression.AddCompressionHeader(System.Text.Encoding.UTF8.GetBytes(modFileData), false));
+                        }
                     }
                 }
                 newMessage.data = mw.GetMessageBytes();
