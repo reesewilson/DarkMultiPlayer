@@ -1,0 +1,5 @@
+C:\Users\Reese Wilson\Downloads\ksp_irc-master (1)\ksp_irc-master\KSPIRC\bin\Release\DMPIRC.dll
+C:\Users\Reese Wilson\Downloads\ksp_irc-master (1)\ksp_irc-master\KSPIRC\bin\Release\DMPIRC.pdb
+C:\Users\Reese Wilson\Downloads\ksp_irc-master (1)\ksp_irc-master\KSPIRC\obj\Release\DMPIRC.dll
+C:\Users\Reese Wilson\Downloads\ksp_irc-master (1)\ksp_irc-master\KSPIRC\obj\Release\DMPIRC.pdb
+C:\Users\Reese Wilson\Downloads\ksp_irc-master (1)\ksp_irc-master\KSPIRC\obj\Release\KSPIRC.csprojResolveAssemblyReference.cache
